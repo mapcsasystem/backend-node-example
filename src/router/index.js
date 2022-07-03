@@ -1,11 +1,14 @@
+import express from "express";
 import categoriesRouter from "./categories.router.js";
 import productsRouter from "./products.router.js";
 import usersRouter from "./users.router.js";
 
 const routerApi = (app) => {
-  app.use("/users", usersRouter);
-  app.use("/products", productsRouter);
-  app.use("/categories", categoriesRouter);
+  const router=express.Router();
+  router.use('api/v1',router)
+  router.use("/users", usersRouter);
+  router.use("/products", productsRouter);
+  router.use("/categories", categoriesRouter);
 };
 
 export default routerApi;
