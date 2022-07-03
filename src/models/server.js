@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from 'dotenv';
 
- const serve=class Server {
+const serve = class Server {
   constructor() {
     dotenv.config();
     this.app = express();
@@ -16,7 +16,7 @@ import dotenv from 'dotenv';
     this.listenServer();
   }
 
-  routes() {}
+  routes() { }
 
   middlewares() {
     this.app.use(express.static("public"));
