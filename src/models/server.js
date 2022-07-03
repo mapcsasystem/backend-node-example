@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
+import routerApi  from "../router/index.js";
 
 const serve = class Server {
   constructor() {
@@ -9,18 +10,20 @@ const serve = class Server {
     this.port = process.env.PORT | 3000;
     this.cors = cors;
 
-
     // middlewares
     this.middlewares();
     // ejecutar metodo listen server
     this.listenServer();
   }
 
-  routes() { }
+  routes() {}
 
   middlewares() {
     this.app.use(express.static("public"));
     this.app.use(this.cors());
+    this.app.use(express.json());
+
+    routerApi(this.app);
   }
 
   listenServer() {
