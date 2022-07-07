@@ -2,7 +2,7 @@
   "name": "backend-node-example",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "type": "module",
   "scripts": {
     "dev": "nodemon src/index.js",
@@ -18,6 +18,7 @@
     "express": "^4.18.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.18"
+    "eslint": "^8.19.0",
+    "eslint-config": "^0.3.0"
   }
 }

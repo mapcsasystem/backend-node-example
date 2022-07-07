@@ -1,26 +1,26 @@
 class ProductsServices{
-    constructor(){
-        this.products=[];
-    }
-    getProducts(){
+  constructor(){
+    this.products=[];
+  }
+  getProducts(){
         
-    }
+  }
 
-    getProduct(){
+  getProduct(){
         
-    }
+  }
 
-    createProduct(){
+  createProduct(){
 
-    }
+  }
 
-    updateProduct(){
+  updateProduct(){
 
-    }
+  }
 
-    deleteProduct(){
+  deleteProduct(){
 
-    }
+  }
 }
 
 export default ProductsServices;

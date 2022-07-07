@@ -1,3 +1,5 @@
-import Server  from "./models/server.js";
+import Server from './models/server.js';
 
-const serve=new Server();
+const serve = new Server();
+
+serve.app;

@@ -1,26 +1,26 @@
 class UserServices{
-    constructor(){
-        this.Users=[];
-    }
-    getUsers(){
+  constructor(){
+    this.Users=[];
+  }
+  getUsers(){
         
-    }
+  }
 
-    getUser(){
+  getUser(){
         
-    }
+  }
 
-    createUser(){
+  createUser(){
 
-    }
+  }
 
-    updateUser(){
+  updateUser(){
 
-    }
+  }
 
-    deleteUser(){
+  deleteUser(){
 
-    }
+  }
 }
 
 export default UserServices;

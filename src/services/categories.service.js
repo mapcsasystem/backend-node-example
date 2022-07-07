@@ -1,26 +1,26 @@
 class CategoriesServices{
-    constructor(){
-        this.Categories=[];
-    }
-    getCategories(){
+  constructor(){
+    this.Categories=[];
+  }
+  getCategories(){
         
-    }
+  }
 
-    getCategory(){
+  getCategory(){
         
-    }
+  }
 
-    createCategory(){
+  createCategory(){
 
-    }
+  }
 
-    updateCategory(){
+  updateCategory(){
 
-    }
+  }
 
-    deleteCategory(){
+  deleteCategory(){
 
-    }
+  }
 }
 
 export default CategoriesServices;
